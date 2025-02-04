@@ -3,6 +3,7 @@ import 'package:animate_do/animate_do.dart';
 import 'package:dotted_decoration/dotted_decoration.dart';
 import 'package:e_commerce/Provider/auth_providers/auth_provider.dart';
 import 'package:e_commerce/Provider/change_state.dart';
+import 'package:e_commerce/router_structure/navigator.dart';
 import 'package:e_commerce/widget/container_button.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -247,7 +248,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         GestureDetector(
-                            onTap: () {},
+                            onTap: () {
+                              Go.pop(context);
+                            },
                             child: const Text(
                               "Cancel",
                               style: TextStyle(fontSize: 20),

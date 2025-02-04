@@ -35,7 +35,7 @@ class AuthProvider with ChangeNotifier {
           .doc(cred.user!.uid)
           .set(auth.tojson());
       CircularProgressIndicator();
-      ErrorMessage(context, "successfull", themegreencolor);
+      ErrorMessage(context, "successfull", themebuttoncolor);
       Go.named(context, RouteName.navabrScreen);
     } on FirebaseAuthException catch (e) {
       ErrorMessage(context, e.message.toString(), themeredcolor);

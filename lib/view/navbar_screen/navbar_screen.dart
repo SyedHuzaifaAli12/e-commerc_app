@@ -55,6 +55,7 @@ class _NavbarScreenState extends State<NavbarScreen> {
         children: [
           PageView(
             controller: _pageController,
+            physics: NeverScrollableScrollPhysics(),
             onPageChanged: onPageChanged,
             children: const [
               HomeScreen(),

@@ -47,7 +47,7 @@ class _LoginScreenState extends State<LoginScreen> {
           child: SingleChildScrollView(
             child: Padding(
               padding: const EdgeInsets.only(
-                  top: 430, left: 20, right: 20, bottom: 20),
+                  top: 320, left: 20, right: 20, bottom: 20),
               child: BounceInDown(
                 duration: const Duration(seconds: 1),
                 child: Column(
@@ -81,7 +81,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     const SizedBox(
                       height: 20,
                     ),
-                    TextField(controller: email,
+                    TextField(
+                      controller: email,
                       decoration: InputDecoration(
                         contentPadding: const EdgeInsets.all(15),
                         hintText: "Email",
@@ -100,7 +101,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     const SizedBox(
                       height: 20,
                     ),
-                    TextField(controller: password,
+                    TextField(
+                      controller: password,
                       decoration: InputDecoration(
                         contentPadding: const EdgeInsets.all(15),
                         hintText: "Enter your passsword",
@@ -156,7 +158,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       children: [
                         GestureDetector(
                             onTap: () {
-                              Go.pop(context);
+                              Navigator.pop(context);
                             },
                             child: const Text(
                               "Cancel",

@@ -71,7 +71,7 @@ class _WellcomeScreenState extends State<WellcomeScreen> {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      Go.namedReplace(context, RouteName.signUpScreen);
+                      Go.named(context, RouteName.signUpScreen);
                     },
                     child: Container(
                       height: 60,
@@ -110,7 +110,7 @@ class _WellcomeScreenState extends State<WellcomeScreen> {
                       ),
                       GestureDetector(
                         onTap: () {
-                          Go.namedReplace(context, RouteName.logInScreen);
+                          Go.named(context, RouteName.logInScreen);
                         },
                         child: const CircleAvatar(
                           radius: 20,
